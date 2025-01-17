@@ -78,6 +78,13 @@ font-family: 'Lato', sans-serif;
 .grid__item {
  display: inline-block;
  width: 33%;
+ gap: 10px
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px
 }
 
 @media all and (max-width: 500px) {
@@ -86,6 +93,7 @@ font-family: 'Lato', sans-serif;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 10px
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -94,13 +102,14 @@ font-family: 'Lato', sans-serif;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    gap: 10px
   }
 }
 @media all and (max-width: 750px) {
   .grid {
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
+    gap: 10px
   }
   .grid__item:last-child {
     grid-column: auto / auto;
@@ -113,6 +122,7 @@ font-family: 'Lato', sans-serif;
   width: auto;
    min-height: auto;
    margin: 0;
+   gap: 10px
 }
 
 a:hover {
