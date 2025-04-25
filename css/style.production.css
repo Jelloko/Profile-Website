@@ -88,12 +88,28 @@ font-family: 'Lato', sans-serif;
   margin: 0 auto; /* Centers the container */
 }
 
+.sizecenter {
+  max-width: 700px;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto; /* Centers the container */
+}
+
 .rspic {
   width: 280px;
   height: 400px;
   float: right; /* Floats the image to the right within the centered container */
   margin-left: 20px; /* Adds space between text and image */
-  margin-right: -400px;
+  margin-right: -350px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.rphspic {
+  width: 250px;
+  height: 400px;
+  float: right; /* Floats the image to the right within the centered container */
+  margin-left: 20px; /* Adds space between text and image */
+  margin-right: -320px;
   margin-bottom: 5px; /* Prevents text from sticking too close below */
 }
 
