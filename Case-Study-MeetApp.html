@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Case Study MyFlix </title>
+  <link rel="shortcut icon" href="./img/bluesky.jpg" type="image/jpg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="page-header">
+ <img src="./img/bluesky.jpg" alt="logo" class="page-header__item"> 
+<nav class="main-navigation page-header__item">
+  <ul role="menubar" class="navigation-list">
+  <li role="presentation">
+    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+  </li>
+  <li role="presentation">
+    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+  </li>
+  <li role="presentation">
+    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+  </li>
+  <li role="presentation">
+    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+  </li>
+  </ul>
+</nav>
+</header>
+<body>
+    <h1 class="center">MeetApp Case Study</h1>
+    <div class="center">
+      <h2>Overview</h2>
+       <p> MeetApp is a serverless, progressive web application (PWA) built with React and developed using Test-Driven Development (TDD). It leverages the Google Calendar API to fetch and display upcoming events, offering users a seamless way to browse, filter, and visualize event data. Designed for both online and offline use, MeetApp can be installed directly onto a user’s device as a home screen shortcut, providing a native-like experience.
+    </p>
+        <img src="./img/meet-graph.png" class="lmeet">
+    </div>
+    <div class="center">
+      <h2>Purpose</h2>
+      <p>MeetApp was developed as a web application exercise during my studies at CareerFoundry.</p>
+    </div>
+    <div class="center">
+      <h2>Objective</h2>
+      <p>The goal was to create an event discovery app where users can:</p>
+      <ul>
+        <li>Browse upcoming events by city</li>
+        <li>Toggle event details for quick viewing</li>
+        <li>Filter the number of displayed events</li>
+        <li>Access event data offline</li>
+        <li>Install the app as a home screen shortcut</li>
+        <li>View data visualizations (charts for event trends)</li>
+      </ul>
+    </div>
+    <div class="center">
+      <h2>Frontend</h2>
+      <p>The frontend is a React-based single-page application that provides an interactive user interface for browsing and filtering events. It includes dynamic components like city search, event charts, and a configurable event list, all managed through React state. The app handles real-time feedback with alert systems and supports offline functionality by caching data in localStorage. User interactions trigger API calls to fetch or filter event data, which is then displayed in visual charts and lists.</p>
+
+      <img src="./img/meet-graphs.png" class="rmeet">
+    </div>
+    <div class="center">
+    </div>
+    <div class="center">
+      <h2>Backend</h2>
+      <p>The backend consists of an AWS-hosted API (using API Gateway and Lambda, implied by the endpoint) that serves event data and manages OAuth 2.0 authentication. It provides secure token validation, event retrieval, and auth URL generation for the frontend. When offline, the frontend falls back to cached mock data, but in normal operation, it fetches live data from the backend. The separation of concerns ensures that the frontend handles UI/state, while the backend manages data persistence, security, and business logic.</p>
+        <p>This structure follows modern client-server architecture, with React for a responsive frontend and AWS for scalable, serverless backend operations.</p>
+    </div>
+    <div class="center">
+        <img src="./img/meet-details.png" class="lmeet">
+      <h2>MeetApp Technologies</h2>
+      <ul>
+        <h3>Frontend</h3>
+        <li>React (UI framework)</li>
+        <li>React Router (navigation)</li>
+        <li>Recharts (data visualization)</li>
+        <li>Jest (TDD testing)</li>
+        
+        <h3>Backend</h3>
+        <li>Google Calendar API (event data)</li>
+        
+        <h3>Progressive Web App Features</h3>
+        <li>Service Workers (offline caching)</li>
+        <li>Responsive Design (mobile & desktop)</li>
+
+        <h3>Development Tools</h3>
+        
+        <li>Git & GitHub (version control)</li>
+        <li>TDD Approach (Jest for testing)</li>
+        <li>Chrome DevTools (debugging)</li>
+      </ul>
+    </div>
+    <div class="center">
+      <h2>Reflectiion</h2>
+      <h3>Challenges</h3>
+      <img src="./img/code-meet.png" class="rmeet">
+      <p>Navigating Google Calendar API rate limits required careful optimization of API calls, while implementing reliable offline sync with Service Worker caching demanded extensive debugging. Additionally, ensuring consistent PWA behavior across Chrome, Safari, and Firefox introduced cross-browser compatibility challenges.</p>
+        
+        <h3 class=>Successes</h3>
+        <p>The project resulted in a fully functional, installable PWA with offline capabilities, featuring a clean and intuitive UI with smooth interactions. Test-driven development (TDD) was effectively implemented, achieving high test coverage and maintainable code.</p>
+        
+        <h3>Future Improvements</h3>
+        <p>If I were to expand the app, I would add:</p>
+        <ul>
+          <li>User Authentication (Google OAuth for personalized calendars)</li>
+        
+            <li>Real-Time Updates (WebSockets for live event changes)</li>
+        
+              <li>Advanced Filters (search by date, category, or keyword)</li>
+      </ul>
+    </div>
+</body>
+</body>
+</html>

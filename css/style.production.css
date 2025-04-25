@@ -83,6 +83,79 @@ font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
+.center {
+  max-width: 700px;
+  margin: 0 auto; /* Centers the container */
+}
+
+.rspic {
+  width: 280px;
+  height: 400px;
+  float: right; /* Floats the image to the right within the centered container */
+  margin-left: 20px; /* Adds space between text and image */
+  margin-right: -400px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.lspic {
+  width: 250px;
+  float: left; /* Floats the image to the right within the centered container */
+  margin-left: -400px; /* Adds space between text and image */
+  margin-right: 20px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.rrspic {
+  width: 600px;
+  height: 400px;
+  float: right; /* Floats the image to the right within the centered container */
+  margin-left: 20px; /* Adds space between text and image */
+  margin-right: -400px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.llspic {
+  width: 400px;
+  height: 300px;
+  float: left; /* Floats the image to the right within the centered container */
+  margin-left: -500px; /* Adds space between text and image */
+  margin-right: 20px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.rmeet {
+  width: 400px;
+  height: 550px;
+  float: right; /* Floats the image to the right within the centered container */
+  margin-left: 20px; /* Adds space between text and image */
+  margin-right: -400px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+.lmeet {
+  width: 400px;
+  height: 550px;
+  float: left; /* Floats the image to the right within the centered container */
+  margin-left: -500px; /* Adds space between text and image */
+  margin-right: 20px;
+  margin-bottom: 5px; /* Prevents text from sticking too close below */
+}
+
+
+.successes {
+  align-self: flex-end; /* Push ONLY this section to the right */
+  text-align: right;    /* Right-align text inside the section */
+  max-width: 80%;       /* Prevent full-width stretching */
+  margin: 10px 0;       /* Add spacing */
+}
+
+.center ul {
+  display: inline-block;
+  text-align: left;   /* Left-align list text */
+  margin: 0 auto;     /* Center the list block */
+  padding-left: 20px; /* Space for bullets */
+}
+
 .slides {
   display: flex;
     flex-direction: column;

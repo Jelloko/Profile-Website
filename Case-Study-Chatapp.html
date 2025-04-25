@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Case Study MyFlix </title>
+  <link rel="shortcut icon" href="./img/bluesky.jpg" type="image/jpg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="page-header">
+ <img src="./img/bluesky.jpg" alt="logo" class="page-header__item"> 
+<nav class="main-navigation page-header__item">
+  <ul role="menubar" class="navigation-list">
+  <li role="presentation">
+    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+  </li>
+  <li role="presentation">
+    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+  </li>
+  <li role="presentation">
+    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+  </li>
+  <li role="presentation">
+    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+  </li>
+  </ul>
+</nav>
+</header>
+<body>
+    <h1 class="center">ChatApp Case Study</h1>
+    <div class="center">
+      <h2>Overview</h2>
+       <p> ChatApp is a mobile application designed to deliver a seamless messaging experience with an intuitive interface. Key features include:
+
+        Entering a username and selecting a background color on the start page.
+        
+        Engaging in real-time conversations within a chat interface.
+        
+        Sending text messages, images, and location data.
+        
+        Accessing messages offline.  </p>
+        <img src="./img/Chat-app.png" class="lspic">
+    </div>
+    <div class="center">
+      <h2>Purpose</h2>
+      <p>ChatApp was developed as a web application exercise during my studies at CareerFoundry.</p>
+    </div>
+    <div class="center">
+      <h2>Objective</h2>
+      <p>The goal was to create a chat application where users could:
+
+        Choose a username and customize the chatroom’s background color.
+        
+        Exchange messages and images, with all data stored in a backend database.
+        
+        View their conversation history even when offline.</p>
+    </div>
+    <div class="center">
+      <h2>Frontend</h2>
+      <p>The client-side of ChatApp prioritizes simplicity and ease of use. Users only need to:</p>
+      <ul>
+        <li>Enter their name.</li> 
+        
+        <li>Select a preferred color.</li>
+        
+        <li>Click "Start Chatting" to enter the conversation.</li>
+        
+        <li>Once inside, they can send and view messages in real time.</li>
+      </ul>
+      <img src="./img/chat.png" class="rspic">
+      <p>Once inside, they can send and view messages in real time.</p>
+    </div>
+    <div class="center">
+    <h2>Bridge (App.js)</h2>
+    <p>This component connects the frontend and backend, utilizing:
+
+      React Native for the mobile app framework.
+      
+      Firebase (Firestore database & storage) for backend services.
+      
+      React Navigation for screen management.</p>
+      <img src="./img/firebase.png" class="llspic">
+    </div>
+    <div class="center">
+      <h2>Backend (Firestore)</h2>
+      <p>All messages and images are stored in a Google Firestore database, ensuring users can retrieve previous conversations without data loss.</p>
+    </div>
+    <div class="center">
+      <h2>ChatApp Technologies</h2>
+      <ul>
+        <li>React Native – JavaScript framework for mobile app development.</li>
+        
+        <li>Expo – Development platform for React Native.</li>
+        
+        <li>GiftedChat – Library for building chat interfaces.</li>
+        
+        <li>Android Studio Emulator – Used for app testing.</li>
+        
+        <li>ImagePicker – Enables image uploads and sharing.</li>
+        
+        <li>React Native Maps – Displays shared locations.</li>
+        
+        <li>Firebase – Powers real-time database and file storage.</li>
+        
+        <li>AsyncStorage – Provides offline functionality by caching messages locally.</li>
+      </ul>
+    </div>
+    <div class="center">
+      <h2>Reflectiion</h2>
+      <h3>Challenges</h3>
+      <img src="./img/bridge.png" class="rrspic">
+      <p>As my first mobile app project, I faced a learning curve in mobile-first design and development.</p>
+        
+        <h3 class=>Successes</h3>
+        <p>Testing and debugging were more streamlined compared to web applications, allowing for efficient issue resolution.</p>
+        
+        <h3>Future Improvements</h3>
+        <p>If I were to expand the app, I would add:</p>
+        <ul>
+          <li>Emoji support</li>
+        
+            <li>Read receipts</li>
+        
+              <li>Message editing and deletion</li>
+      </ul>
+    </div>
+</body>
+</body>
+</html>
